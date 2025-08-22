@@ -7,25 +7,39 @@
     android:layout_height="match_parent"
     tools:context=".ItensMiniaturaActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/idAppBarItensMiniatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/idToolBarItens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/idTabLayoutItensMin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idTabLayoutItensMin">
+        app:tabMode="fixed">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Miniaturas"/>
+            android:text="Miniaturas" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Acessórios"/>
+            android:text="Acessórios" />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Loja"/>
+            android:text="Loja" />
 
     </com.google.android.material.tabs.TabLayout>
 
